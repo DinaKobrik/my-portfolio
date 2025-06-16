@@ -1,14 +1,8 @@
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 export default function Header() {
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="bg-white shadow-md sticky top-0 z-10"
-    >
+    <header className="bg-white shadow-md sticky top-0 z-10">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-pink-600">
           Портфолио
@@ -28,6 +22,6 @@ export default function Header() {
           </Link>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }
